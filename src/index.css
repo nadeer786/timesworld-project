@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
+body {
+  font-family: "Noto Sans";
+  background: #fbfbfb;
+}
+
+main {
+  height: 100%;
+  margin: 0;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+@media (max-width: 768px) {
+  .login-container {
+    padding-left: 0;
+  }
+}
+
+.login-form-container {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-form-container {
+    flex: 0;
+  }
+  .image-container {
+    display: none;
+  }
+}
+.login-form {
+  /* background-color: #fff; */
+  /* padding: 40px; */
+  border-radius: 8px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+form input {
+  margin: 15px 0;
+  padding: 15px 10px;
+  width: 280px;
+  height: 48px;
+  outline: none;
+  border: 2px solid #000;
+  /* 	border-radius:20px; */
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  border-color: rgb(0, 0, 0);
+}
+
+input[type="checkbox"] {
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 0px;
+  background: #f2f2f2;
+  cursor: pointer;
+  line-height: 0;
+  margin: 0 0.6em 0 0;
+  outline: 0;
+  padding: 0 !important;
+  vertical-align: text-top;
+  height: 32px;
+  width: 32px;
+  -webkit-appearance: none;
+  opacity: 0.5;
+}
+
+input[type="checkbox"]:hover {
+  opacity: 1;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #000;
+  opacity: 1;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 4px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  margin: -1px -1px 0 -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
+}
+
+input[type="submit"] {
+  padding: 15px 50px;
+  height: 48px;
+  width: 280px;
+  background: #3c3c3c;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+input[type="submit"]:active {
+  opacity: 0.4;
+}
+
+.login-image {
+  /* background-color: #f4f4f4; */
+  /* padding: 40px; */
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+@media (max-width: 768px) {
+  .login-image {
+    display: none;
+  }
+}
+
+.sign-with-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 280px;
+}
+
+.sign-with-container img {
+  width: 48px;
+  height: 48px;
+}
+
+/* Countries List Page */
+
+.country-card {
+  height: 130px;
+  border: 2px solid #3e3e3e;
+  border-radius: 0;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.country-card .card-body {
+  display: flex;
+  align-items: center;
+}
+.country-card img {
+  width: 127px;
+  height: 96px;
+}
+@media (max-width: 768px) {
+  .country-card {
+    height: 68px;
+    justify-content: center;
+  }
+  .country-card img {
+    height: 46px;
+    width: 48px;
+  }
+}
+
+/* Footer Container */
+
+.footer-container {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons-container img {
+  margin: 5px;
+  margin-bottom: 25px;
+}
